@@ -1,478 +1,836 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/templatemo-style.css" />
-    <title>Aayushi Kapoor - Senior Backend Developer</title>
-    
-<!--
-Mini Profile Template
-https://templatemo.com/tm-530-mini-profile
--->
-  </head>
-  <body>
-    <!-- Welcome Section -->
-    <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
-      <div class="container-fluid tm-brand-container-outer">
-        <div class="row">
-          <div class="col-12">
-            <!-- Logo Area -->
-            <!-- Black transparent bg -->
-            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
-              <div class="tm-brand-container text-center">
-                <h1 class="tm-brand-name">AAYUSHI KAPOOR</h1>
-                <p class="tm-brand-description mb-0">Senior Backend Developer</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aayushi Kapoor — Laravel Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg: #080C18;
+    --bg2: #0D1224;
+    --bg3: #111828;
+    --cyan: #B5006E;
+    --cyan-dim: rgba(181,0,110,0.15);
+    --cyan-border: rgba(181,0,110,0.38);
+    --green: #D4308E;
+    --purple: #7A1060;
+    --text: #E8EDF5;
+    --text-muted: #7A8599;
+    --text-mid: #B0BCCF;
+    --border: rgba(255,255,255,0.06);
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Inter', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-      <div class="tm-bg-white-transparent tm-welcome-container">
-        <div class="container-fluid">
-          <div class="row h-100">
-            <!-- Welcome Text -->
-            <!-- White transparent bg -->
-            <div class="col-md-7 tm-welcome-left-col">
-              <div class="tm-welcome-left">
-                <h2 class="tm-welcome-title">Professional Summary</h2>
-                <p class="pb-0">
-                  Senior Backend Developer with 6+ years of experience building scalable, secure, and high-performance web applications using Laravel and PHP. Strong expertise in system design, database optimization, and API engineering. Experienced in handling concurrency, implementing fault-tolerant systems using queues, retries, and batch processing, and deploying production-ready applications using CI/CD and Docker.
-                </p>
-                <div class="mt-4">
-                  <p class="mb-2"><strong>Phone:</strong> 7987592089</p>
-                  <p class="mb-2"><strong>Email:</strong> ayu846142@gmail.com</p>
-                  <p class="mb-0"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/aayushi-kapoor-0b0507180" target="_blank">linkedin.com/in/aayushi-kapoor-0b0507180</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Brown bg -->
-            <div class="col-md-5">
-              <div class="tm-welcome-right">
-                <i class="fas fa-4x fa-code p-3 tm-welcome-icon"></i>
-                <p class="mb-0">
-                  <strong>Technical Skills:</strong><br>
-                  <strong>Backend:</strong> Laravel, PHP, REST APIs, Microservices<br>
-                  <strong>Frontend:</strong> Vue.js, Next.js, JavaScript, AJAX<br>
-                  <strong>Database:</strong> MySQL, Query Optimization, Indexing<br>
-                  <strong>DevOps:</strong> Docker, Git, Jenkins, CI/CD<br>
-                  <strong>Performance:</strong> Redis, Memcached, Queues, Batch Processing<br>
-                  <strong>Security:</strong> RBAC, JWT, OAuth, OWASP Top 10<br>
-                  <strong>AI/LLM:</strong> OpenAI API, RAG Pipelines, Embeddings
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Welcome section -->
+  html { scroll-behavior: smooth; }
 
-    <!-- Portfolio section -->
-    <section id="tmPortfolio">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-green">
-                Senior Backend Developer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-green">
-                  Network Zone 13
-                  <span class="tm-title-small">(Mar 2024 – Dec 2025)</span>
-                </h3>
-                <p class="mb-0">
-                  • Built scalable real-time chat system using WebSockets supporting concurrent users with low latency<br>
-                  • Built AI-powered backend using RAG pipelines for document-based Q&A systems<br>
-                  • Deployed containerized Laravel applications on VPS using Coolify (Docker-based)
-                </p>
-              </div>
-            </div>
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
 
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-orange">
-                PHP / Laravel Developer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-orange">
-                  Brandhype Digital
-                  <span class="tm-title-small">(Jan 2023 – Jan 2024)</span>
-                </h3>
-                <p class="mb-0">
-                  • Optimized MySQL queries and improved performance using indexing and query tuning<br>
-                  • Implemented Laravel features such as Middleware, Events, Policies, API Resources, and Service Container<br>
-                  • Developed and maintained scalable REST APIs with validation and structured error handling<br>
-                  • Wrote unit and feature tests to improve code reliability
-                </p>
-              </div>
-            </div>
+  /* ── GRID OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(181,0,110,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(181,0,110,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
 
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-blue">
-                Software Developer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-blue">
-                  Web Apprise System
-                  <span class="tm-title-small">(Oct 2022 – Dec 2022)</span>
-                </h3>
-                <p class="mb-0">
-                  • Developed multi-module doctor portal with 20+ features using MVC architecture<br>
-                  • Improved user experience with AJAX-based dynamic interactions
-                </p>
-              </div>
-            </div>
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    height: 64px;
+    background: rgba(8,12,24,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--cyan);
+    letter-spacing: 0.08em;
+  }
+  .nav-logo span { color: var(--text-muted); }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--cyan); }
 
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-dark-gray">
-                PHP / Laravel Developer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-dark-gray">
-                  Miracle Studios
-                  <span class="tm-title-small">(Jan 2021 – Sep 2022)</span>
-                </h3>
-                <p class="mb-0">
-                  • Built e-learning platform with RBAC and automated workflows<br>
-                  • Implemented recommendation system for personalized learning experience<br>
-                  • Worked in Agile environment with sprint planning and timely delivery
-                </p>
-              </div>
-            </div>
+  /* ── SECTIONS ── */
+  section { position: relative; z-index: 1; }
 
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-green">
-                PHP Developer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-green">
-                  Crisil Infotech
-                  <span class="tm-title-small">(Jan 2020 – Jan 2021)</span>
-                </h3>
-                <p class="mb-0">
-                  • Delivered 40+ websites and backend systems across multiple domains<br>
-                  • Developed secure APIs and admin dashboards
-                </p>
-              </div>
-            </div>
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 5vw 60px;
+  }
+  .hero-inner { max-width: 860px; }
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--cyan);
+  }
+  h1.hero-name {
+    font-family: var(--mono);
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  h1.hero-name .accent { color: var(--cyan); }
+  .hero-title-wrap {
+    font-family: var(--mono);
+    font-size: clamp(14px, 2vw, 20px);
+    color: var(--text-muted);
+    margin-bottom: 32px;
+    min-height: 30px;
+  }
+  #typed-title { color: var(--green); }
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    background: var(--green);
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+    margin-left: 2px;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
-            <div class="tm-portfolio-item">
-              <div class="tm-portfolio-name text-white tm-bg-orange">
-                PHP Developer
-              </div>
-              <div class="tm-portfolio-description">
-                <h3 class="tm-text-orange">
-                  Maestros Infotech
-                  <span class="tm-title-small">(Apr 2019 – Aug 2019)</span>
-                </h3>
-                <p class="mb-0">
-                  • Spearheaded development of dynamic features for educational and e-commerce platforms, resulting in measurable increases in user engagement and retention<br>
-                  • Engineered RESTful APIs for mobile applications, ensuring secure, reliable, and client data exchange between clients and servers<br>
-                  • Leveraged project management tools (e.g., Trello, Jira) to track progress, set deadlines, and ensure on-time delivery of Core PHP projects<br>
-                  • Applied best coding practices and performance optimization techniques to ensure scalability and maintainability
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End portfolio section -->
+  .hero-summary {
+    font-size: 16px;
+    color: var(--text-mid);
+    max-width: 620px;
+    line-height: 1.8;
+    margin-bottom: 44px;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+  }
+  .stat-item {}
+  .stat-num {
+    font-family: var(--mono);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cyan);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: var(--cyan);
+    color: var(--bg);
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  }
+  .btn-primary:hover { background: #D4308E; transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: transparent;
+    color: var(--cyan);
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    border: 1px solid var(--cyan-border);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover { background: var(--cyan-dim); border-color: var(--cyan); }
 
-    <!-- Projects section -->
-    <section id="tmProjects" class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center text-white mb-5" style="font-size: 2.5rem; font-weight: bold;">Featured Projects</h2>
-          </div>
-        </div>
-        
-        <div class="row">
-          <!-- Project 1 -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-              <div class="card-body p-4">
-                <div class="text-center mb-3">
-                  <i class="fas fa-calendar-check fa-3x text-success mb-3"></i>
-                  <h4 class="card-title text-dark font-weight-bold">Appointment Booking System</h4>
-                  <p class="text-muted">High-Performance Platform</p>
-                </div>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>High concurrency handling</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Database transactions & locking</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Timezone-aware scheduling</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Redis caching & queues</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  /* ── SECTION HEADERS ── */
+  .section-wrap { padding: 80px 5vw; }
+  .section-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-eyebrow::after {
+    content: '';
+    flex: 1;
+    max-width: 60px;
+    height: 1px;
+    background: var(--cyan-border);
+  }
+  h2.section-title {
+    font-family: var(--mono);
+    font-size: clamp(24px, 3.5vw, 40px);
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 48px;
+    letter-spacing: -0.02em;
+  }
 
-          
-          <!-- Project 3 -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-              <div class="card-body p-4">
-                <div class="text-center mb-3">
-                  <i class="fas fa-graduation-cap fa-3x text-info mb-3"></i>
-                  <h4 class="card-title text-dark font-weight-bold">E-learning Platform</h4>
-                  <p class="text-muted">Learning Management System</p>
-                  <div class="mt-3">
-                    <a href="https://www.efacourses.com/" target="_blank" class="btn btn-info btn-sm">
-                      <i class="fas fa-external-link-alt mr-2"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check-circle text-info mr-2"></i>RBAC & automation</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-info mr-2"></i>Personalized recommendations</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-info mr-2"></i>Progress tracking</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-info mr-2"></i>Certification system</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  /* ── SKILLS ── */
+  #skills { background: var(--bg2); }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .skill-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    padding: 24px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .skill-card:hover { border-color: var(--cyan-border); transform: translateY(-2px); }
+  .skill-card-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-mid);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    letter-spacing: 0.04em;
+    transition: all 0.15s;
+  }
+  .tag:hover { color: var(--cyan); border-color: var(--cyan-border); background: var(--cyan-dim); }
 
-          <!-- Project 4 -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-              <div class="card-body p-4">
-                <div class="text-center mb-3">
-                  <i class="fas fa-chart-line fa-3x text-danger mb-3"></i>
-                  <h4 class="card-title text-dark font-weight-bold">Accounting Portal</h4>
-                  <p class="text-muted">Financial Management System</p>
-                  <div class="mt-3">
-                    <a href="https://accounts.highmarkseducation.com/" target="_blank" class="btn btn-danger btn-sm">
-                      <i class="fas fa-external-link-alt mr-2"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check-circle text-danger mr-2"></i>Invoice & transaction management</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-danger mr-2"></i>Batch processing (chunkById)</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-danger mr-2"></i>Email notifications</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-danger mr-2"></i>Logging & monitoring</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  /* ── EXPERIENCE ── */
+  #experience {}
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 8px; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--cyan), transparent);
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 48px;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -33px; top: 7px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--cyan);
+    box-shadow: 0 0 8px var(--cyan);
+  }
+  .job-header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 4px; }
+  .job-title {
+    font-family: var(--mono);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .job-company {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--cyan);
+  }
+  .job-meta {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .job-bullets { list-style: none; padding: 0; }
+  .job-bullets li {
+    position: relative;
+    padding-left: 20px;
+    color: var(--text-mid);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+  }
+  .job-bullets li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--cyan);
+    font-family: var(--mono);
+  }
+  .job-bullets li strong { color: var(--text); font-weight: 600; }
 
-          <!-- Project 5 -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-              <div class="card-body p-4">
-                <div class="text-center mb-3">
-                  <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
-                  <h4 class="card-title text-dark font-weight-bold">Cybersecurity Services</h4>
-                  <p class="text-muted">Security Platform</p>
-                  <div class="mt-3">
-                    <a href="https://cybersecurityservices.io/" target="_blank" class="btn btn-primary btn-sm">
-                      <i class="fas fa-external-link-alt mr-2"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check-circle text-primary mr-2"></i>Security assessment tools</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-primary mr-2"></i>Vulnerability scanning</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-primary mr-2"></i>Security monitoring</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-primary mr-2"></i>Compliance management</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  /* ── PROJECTS ── */
+  #projects { background: var(--bg2); }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  .project-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .project-card:hover { border-color: var(--cyan-border); transform: translateY(-3px); }
+  .project-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .project-icon {
+    width: 40px; height: 40px;
+    background: var(--cyan-dim);
+    border: 1px solid var(--cyan-border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .project-name {
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .project-desc { font-size: 13px; color: var(--text-mid); line-height: 1.7; }
+  .project-stack { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .stack-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--purple);
+    background: rgba(122,16,96,0.2);
+    border: 1px solid rgba(122,16,96,0.4);
+    padding: 3px 8px;
+    letter-spacing: 0.04em;
+  }
 
-          <!-- Project 6 -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-              <div class="card-body p-4">
-                <div class="text-center mb-3">
-                  <i class="fas fa-cogs fa-3x text-secondary mb-3"></i>
-                  <h4 class="card-title text-dark font-weight-bold">PMU Management System</h4>
-                  <p class="text-muted">Management Portal</p>
-                  <div class="mt-3">
-                    <a href="https://navis.jitnitnovus.com/public/login" target="_blank" class="btn btn-secondary btn-sm">
-                      <i class="fas fa-external-link-alt mr-2"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check-circle text-secondary mr-2"></i>User management system</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-secondary mr-2"></i>Secure authentication</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-secondary mr-2"></i>Dashboard analytics</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-secondary mr-2"></i>Role-based access</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  /* ── CONTACT ── */
+  #contact {}
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media(max-width:700px){ .contact-grid { grid-template-columns: 1fr; } }
+  .contact-tagline {
+    font-size: 18px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .contact-links { display: flex; flex-direction: column; gap: 16px; }
+  .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--text-mid);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    background: var(--bg2);
+    transition: all 0.2s;
+  }
+  .contact-link:hover { border-color: var(--cyan-border); color: var(--cyan); background: var(--cyan-dim); }
+  .contact-link-icon {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--cyan);
+    background: var(--cyan-dim);
+    border: 1px solid var(--cyan-border);
+    padding: 4px 8px;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    min-width: 48px;
+    text-align: center;
+  }
+  .availability-card {
+    background: var(--bg2);
+    border: 1px solid var(--cyan-border);
+    padding: 28px;
+  }
+  .avail-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--cyan);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .avail-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 16px;
+    color: var(--green);
+    margin-bottom: 20px;
+  }
+  .avail-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 8px var(--green);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.2)} }
+  .avail-details { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .avail-details li {
+    font-size: 13px;
+    color: var(--text-mid);
+    display: flex;
+    gap: 10px;
+  }
+  .avail-details li span:first-child { color: var(--cyan); font-family: var(--mono); }
 
-          <!-- Project 7 -->
-          <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card h-100 border-0 shadow-lg" style="border-radius: 15px; overflow: hidden;">
-              <div class="card-body p-4">
-                <div class="text-center mb-3">
-                  <i class="fas fa-search fa-3x text-success mb-3"></i>
-                  <h4 class="card-title text-dark font-weight-bold">Shiksharesearch</h4>
-                  <p class="text-muted">Search Platform</p>
-                  <div class="mt-3">
-                    <a href="https://www.shiksharesearch.com/" target="_blank" class="btn btn-success btn-sm">
-                      <i class="fas fa-external-link-alt mr-2"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-                <ul class="list-unstyled">
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Advanced search functionality</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>User-friendly interface</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Fast search results</li>
-                  <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Responsive design</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Projects section -->
+  /* ── FOOTER ── */
+  footer {
+    padding: 32px 5vw;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-copy {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+  .footer-built {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-muted);
+  }
+  .footer-built span { color: var(--cyan); }
 
-    <!-- Contact section -->
-    <div id="tmContact"  class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-02.jpg">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="tm-contact-items-container">
-              <div class="tm-contact-item">
-                <i class="fas fa-5x fa-code tm-contact-item-icon"></i>
-                <p class="mb-0">
-                  <strong>Technical Skills</strong><br>
-                  <strong>Backend:</strong> Laravel, PHP, REST APIs<br>
-                  <strong>Frontend:</strong> Vue.js, Next.js, JavaScript<br>
-                  <strong>Database:</strong> MySQL, Query Optimization<br>
-                  <strong>DevOps:</strong> Docker, Git, CI/CD
-                </p>
-              </div>
-              
-              <div class="tm-contact-item">
-                <i class="fas fa-5x fa-shield-alt tm-contact-item-icon"></i>
-                <p class="mb-0">
-                  <strong>Core Competencies</strong><br>
-                  System Design • Database Optimization<br>
-                  API Engineering • Security Implementation<br>
-                  Performance Optimization • Concurrency Handling
-                </p>
-              </div>
+  /* ── SCROLL REVEAL ── */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
 
-              <div class="tm-contact-item">
-                <i class="fas fa-5x fa-graduation-cap tm-contact-item-icon"></i>
-                <p class="mb-0">
-                  <strong>Education</strong><br>
-                  Bachelor of Computer Applications (BCA) - 2018
-                </p>
-              </div>
+  @media(max-width: 600px) {
+    .hero-stats { gap: 24px; }
+    .nav-links { display: none; }
+    .timeline { padding-left: 18px; }
+    .timeline-item::before { left: -23px; }
+  }
+</style>
+</head>
+<body>
 
-            </div>
-          </div>
-        </div>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">AK<span>.dev</span></div>
+  <div class="nav-links">
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-        <div class="row" style="display:none">
-          <div class="col-12">
-            <form
-              action="send_mail.php"
-              method="POST"
-              id="tmContactForm"
-              class="tm-bg-white-transparent"
-            >
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="contact_name"
-                  name="contact_name"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="contact_email"
-                  name="contact_email"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  rows="4"
-                  id="contact_message"
-                  name="contact_message"
-                  class="form-control rounded-0 border-top-0 border-right-0 border-left-0"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-              <div class="text-center">
-                <button
-                  type="submit"
-                  class="btn tm-btn-submit rounded-0 text-white"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row">
-          <footer class="col-12">
-            <p class="text-center tm-copyright-text">
-            Copyright 2026 Aayushi Kapoor - Senior Backend Developer
-            </p>
-          </footer>
-        </div>
-      </div>
-      <!-- container -->
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">Available for hire · Remote-first</div>
+    <h1 class="hero-name">Aayushi<br><span class="accent">Kapoor</span></h1>
+    <div class="hero-title-wrap">
+      &gt; <span id="typed-title"></span><span class="cursor"></span>
     </div>
-    <!-- section -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script>
-      function detectMsBrowser() {
-        using_ms_browser =
-          navigator.appName == "Microsoft Internet Explorer" ||
-          (navigator.appName == "Netscape" &&
-            navigator.appVersion.indexOf("Edge") > -1) ||
-          (navigator.appName == "Netscape" &&
-            navigator.appVersion.indexOf("Trident") > -1);
+    <p class="hero-summary">
+      Senior Laravel Developer with 6+ years building production SaaS backends, real-time systems, and AI/GenAI integrations. I ship scalable APIs, RAG pipelines, and multi-tenant ERPs — then optimise them until the numbers are boring.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">40%</div>
+        <div class="stat-label">API latency reduced</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">70%</div>
+        <div class="stat-label">Support queries automated</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Years of Laravel</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">99.9%</div>
+        <div class="stat-label">Uptime SLA delivered</div>
+      </div>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="#contact">Get in Touch</a>
+      <a class="btn-outline" href="#experience">View Experience</a>
+    </div>
+  </div>
+</section>
 
-        if (using_ms_browser == true) {
-          alert(
-            "Please use Chrome or Firefox for the best browsing experience!"
-          );
-        }
-      }
-      function setBrandMarginTop() {
-        var bottomContainerHeight = $(".tm-welcome-container").height();
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-eyebrow">02 // Technical Expertise</div>
+    <h2 class="section-title">What I build with</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-title">// Backend & PHP</div>
+        <div class="skill-tags">
+          <span class="tag">Laravel v12</span><span class="tag">PHP 8.x</span><span class="tag">REST APIs</span><span class="tag">Microservices</span><span class="tag">WebSockets</span><span class="tag">Queues</span><span class="tag">Livewire</span><span class="tag">Middleware</span><span class="tag">RBAC</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-title">// AI & GenAI</div>
+        <div class="skill-tags">
+          <span class="tag">OpenAI API</span><span class="tag">RAG Pipelines</span><span class="tag">Vector Embeddings</span><span class="tag">Semantic Search</span><span class="tag">Ollama</span><span class="tag">TinyLlama</span><span class="tag">Cosine Similarity</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-title">// Database & Caching</div>
+        <div class="skill-tags">
+          <span class="tag">MySQL</span><span class="tag">Postgres</span><span class="tag">Redis</span><span class="tag">Memcached</span><span class="tag">Query Optimisation</span><span class="tag">Indexing</span><span class="tag">Schema Design</span><span class="tag">Batch Processing</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-title">// Cloud & DevOps</div>
+        <div class="skill-tags">
+          <span class="tag">AWS EC2</span><span class="tag">AWS S3</span><span class="tag">Docker</span><span class="tag">Nginx</span><span class="tag">CI/CD</span><span class="tag">Jenkins</span><span class="tag">PHP-FPM</span><span class="tag">Coolify</span><span class="tag">Linux</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-title">// Security</div>
+        <div class="skill-tags">
+          <span class="tag">JWT</span><span class="tag">OAuth 2.0</span><span class="tag">OWASP Top 10</span><span class="tag">Secure API Design</span><span class="tag">Data Encryption</span><span class="tag">RBAC</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-title">// Frontend & Testing</div>
+        <div class="skill-tags">
+          <span class="tag">Vue.js</span><span class="tag">Next.js</span><span class="tag">JavaScript</span><span class="tag">AJAX</span><span class="tag">PHPUnit</span><span class="tag">TDD</span><span class="tag">Feature Tests</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        $(".tm-brand-container-outer").css({
-          "margin-top": -bottomContainerHeight + "px"
-        });
-      }
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-eyebrow">03 // Work History</div>
+    <h2 class="section-title">Where I've worked</h2>
+    <div class="timeline">
 
-      $(function() {
-        setBrandMarginTop();
-        detectMsBrowser();
+      <div class="timeline-item reveal">
+        <div class="job-header">
+          <span class="job-title">Freelance Backend Developer</span>
+          <span class="job-company">Self-Employed</span>
+        </div>
+        <div class="job-meta">
+          <span>Dec 2025 – Present</span><span>Remote · Part-time</span>
+        </div>
+        <ul class="job-bullets">
+          <li>Architecting a multi-client SaaS boilerplate with <strong>multi-tenancy, Stripe billing, and OpenAI-powered features</strong> — designed for zero-downtime tenant onboarding.</li>
+          <li>Cut client deployment cycles by <strong>~40%</strong> through CI/CD pipeline redesign and automated test gates.</li>
+          <li>Delivering security and performance audits identifying critical OWASP vulnerabilities and query bottlenecks before production launch.</li>
+        </ul>
+      </div>
 
-        // Handle window resize event
-        $(window).resize(function() {
-          setBrandMarginTop();
-        });
-      });
-    </script>
-  </body>
+      <div class="timeline-item reveal">
+        <div class="job-header">
+          <span class="job-title">Senior Backend Developer</span>
+          <span class="job-company">Network Zone 13</span>
+        </div>
+        <div class="job-meta">
+          <span>Mar 2024 – Dec 2025</span><span>Remote · Full-time</span>
+        </div>
+        <ul class="job-bullets">
+          <li>Architected a <strong>real-time chat system</strong> via WebSockets and Laravel Broadcasting sustaining 500+ concurrent users at sub-100ms latency with zero dropped connections.</li>
+          <li>Designed and delivered a <strong>multi-tenant ERP</strong> with isolated databases, centralised auth, RBAC dashboards, and full order lifecycle across multiple business tenants.</li>
+          <li>Built an <strong>AI-powered document Q&amp;A backend</strong> using RAG pipelines, OpenAI Embeddings, and cosine-similarity vector search — automated 60–70% of manual support queries.</li>
+          <li>Containerised all services with Docker + Coolify on VPS; maintained Nginx, PHP-FPM, Supervisor in production — achieved <strong>99.9% uptime SLA</strong>.</li>
+          <li>Led weekly architecture reviews with 3-person backend team; mentored 1 junior developer through TDD and Laravel best-practices.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="job-header">
+          <span class="job-title">PHP / Laravel Developer</span>
+          <span class="job-company">Brandhype Digital</span>
+        </div>
+        <div class="job-meta">
+          <span>Jan 2023 – Jan 2024</span><span>India · Full-time</span>
+        </div>
+        <ul class="job-bullets">
+          <li>Reduced API response times by <strong>40%</strong> across 3 production products through MySQL indexing, query rewrites, and execution plan analysis.</li>
+          <li>Elevated PHPUnit test coverage from <strong>30% → 75%</strong>, directly cutting the production bug rate in half within two sprint cycles.</li>
+          <li>Applied advanced Laravel patterns (Middleware, Events, Policies, Horizon, Service Container) to untangle legacy monoliths.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="job-header">
+          <span class="job-title">PHP / Laravel Developer</span>
+          <span class="job-company">Miracle Studios</span>
+        </div>
+        <div class="job-meta">
+          <span>Jan 2021 – Sep 2022</span><span>India · Full-time</span>
+        </div>
+        <ul class="job-bullets">
+          <li>Built a complete <strong>e-learning platform</strong> with RBAC, automated workflows, email notifications, and a personalised recommendation engine — scaled to 500+ active learners.</li>
+          <li>Delivered features across 2-week Agile sprints with a <strong>95% on-time release rate</strong> in a 4-person cross-functional team.</li>
+          <li>Implemented JWT authentication and OAuth 2.0 integrations for third-party login providers.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="job-header">
+          <span class="job-title">PHP Developer</span>
+          <span class="job-company">Crisil Infotech</span>
+        </div>
+        <div class="job-meta">
+          <span>Jan 2020 – Jan 2021</span><span>India · Full-time</span>
+        </div>
+        <ul class="job-bullets">
+          <li>Delivered 40+ websites and backend systems; built secure REST APIs and feature-rich admin dashboards from scratch.</li>
+          <li>Implemented RBAC admin panels with optimised MySQL schema design and custom data reporting modules.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-eyebrow">04 // Featured Projects</div>
+    <h2 class="section-title">Things I've built</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-card-header">
+          <div class="project-icon">🏢</div>
+          <div class="project-name">Multi-Tenant ERP — Products & Orders</div>
+        </div>
+        <p class="project-desc">Supports multiple independent tenants with isolated databases, product catalogue, full order lifecycle (cart → invoice → fulfilment), per-tenant RBAC, and a super-admin dashboard. Architected for horizontal scalability with zero cross-tenant data leakage.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Laravel</span><span class="stack-tag">MySQL</span><span class="stack-tag">Redis</span><span class="stack-tag">Docker</span><span class="stack-tag">JWT</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-header">
+          <div class="project-icon">🤖</div>
+          <div class="project-name">AI-Powered Support Knowledge Base</div>
+        </div>
+        <p class="project-desc">Production RAG pipeline using Ollama (TinyLlama) + OpenAI Embeddings for intelligent customer support. Cosine-similarity semantic search automated 70% of support queries with contextually accurate AI-generated responses.</p>
+        <div class="project-stack">
+          <span class="stack-tag">OpenAI API</span><span class="stack-tag">RAG</span><span class="stack-tag">Embeddings</span><span class="stack-tag">Ollama</span><span class="stack-tag">Laravel</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-header">
+          <div class="project-icon">📅</div>
+          <div class="project-name">Appointment Booking System</div>
+        </div>
+        <p class="project-desc">Race-condition-safe scheduling via DB transactions and pessimistic locking; full timezone-aware slot management supporting multi-region deployments with Redis-based async queue processing.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Laravel</span><span class="stack-tag">MySQL</span><span class="stack-tag">Redis</span><span class="stack-tag">Queues</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-header">
+          <div class="project-icon">👥</div>
+          <div class="project-name">HRM Portal</div>
+        </div>
+        <p class="project-desc">Role-based employee and payroll management system with granular permission control, stateless JWT authentication, and horizontally scalable API architecture.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Laravel</span><span class="stack-tag">JWT</span><span class="stack-tag">RBAC</span><span class="stack-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-header">
+          <div class="project-icon">💰</div>
+          <div class="project-name">Accounting Portal</div>
+        </div>
+        <p class="project-desc">Financial management system handling invoices, transactions, and reporting with chunkById() batch processing — capable of processing 1M+ records without memory exhaustion.</p>
+        <div class="project-stack">
+          <span class="stack-tag">Laravel</span><span class="stack-tag">MySQL</span><span class="stack-tag">Batch Processing</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-card-header">
+          <div class="project-icon">☁️</div>
+          <div class="project-name">Cloud Deployment & Storage Infrastructure</div>
+        </div>
+        <p class="project-desc">Deployed and managed Laravel applications on AWS EC2 with Nginx and PHP-FPM; integrated AWS S3 for scalable media storage and CDN delivery with optimised cache headers.</p>
+        <div class="project-stack">
+          <span class="stack-tag">AWS EC2</span><span class="stack-tag">AWS S3</span><span class="stack-tag">Nginx</span><span class="stack-tag">CDN</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-eyebrow">05 // Get in Touch</div>
+    <h2 class="section-title">Let's work together</h2>
+    <div class="contact-grid">
+      <div>
+        <p class="contact-tagline">I'm available immediately for full-time remote engagement. If you're building something that needs a battle-tested Laravel backend or AI integration, let's talk.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:ayu846142@gmail.com">
+            <span class="contact-link-icon">EMAIL</span>
+            ayu846142@gmail.com
+          </a>
+          <a class="contact-link" href="tel:+917987592089">
+            <span class="contact-link-icon">PHONE</span>
+            +91 79875 92089
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/aayushi-kapoor-0b0507180" target="_blank">
+            <span class="contact-link-icon">IN</span>
+            linkedin.com/in/aayushi-kapoor-0b0507180
+          </a>
+          <a class="contact-link" href="https://github.com/aayushikapoor846142" target="_blank">
+            <span class="contact-link-icon">GH</span>
+            github.com/aayushikapoor846142
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="availability-card">
+          <div class="avail-label">// Current Status</div>
+          <div class="avail-status">
+            <div class="avail-dot"></div>
+            Available Immediately
+          </div>
+          <ul class="avail-details">
+            <li><span>ROLE</span><span>Senior Backend / Laravel Developer</span></li>
+            <li><span>TYPE</span><span>Full-time preferred</span></li>
+            <li><span>MODE</span><span>Remote-first · Open to onsite in Bhopal</span></li>
+            <li><span>EXP</span><span>6+ years · Laravel · PHP · AI integrations</span></li>
+            <li><span>LANG</span><span>English (Professional) · Hindi (Native)</span></li>
+            <li><span>EDU</span><span>BCA, Barkatullah University</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">© 2025 Aayushi Kapoor · Bhopal, India</div>
+  <div class="footer-built">Built for <span>humans</span> · Deployed for <span>results</span></div>
+</footer>
+
+<script>
+  // TYPING ANIMATION
+  const titles = [
+    "Senior Laravel Developer",
+    "Backend Architect",
+    "AI / GenAI Integrations",
+    "API & SaaS Specialist"
+  ];
+  let ti = 0, ci = 0, deleting = false;
+  const el = document.getElementById('typed-title');
+  function type() {
+    const current = titles[ti];
+    if (!deleting) {
+      el.textContent = current.slice(0, ++ci);
+      if (ci === current.length) { deleting = true; setTimeout(type, 1800); return; }
+    } else {
+      el.textContent = current.slice(0, --ci);
+      if (ci === 0) { deleting = false; ti = (ti + 1) % titles.length; }
+    }
+    setTimeout(type, deleting ? 40 : 75);
+  }
+  type();
+
+  // SCROLL REVEAL
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
 </html>
